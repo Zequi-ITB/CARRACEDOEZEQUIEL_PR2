@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+*{
+ /*border: 1px solid blanchedalmond;*/
+   
+}
+
+.tipo_general {
+    font-family: "Onest", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.font_titulo_pagina {
+    font-family: "New Rocker", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.font_titulo_pagina span{
+    color: red;
+}
+
+
+.boton {
+    padding: .50rem 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    border: 1px solid rgb(84, 84, 84);
+}
+
+
+.tag {
+
+    border: 1px solid rgb(84, 84, 84);
+    border-radius: 10px;
+    font-size: smaller;
+    padding: .2rem 0.5rem;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/*Encabezado general secciones (titulo y enlace a detalle)*/
+
+.encabezado_seccion {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+
+    h2 {
+        border-bottom: 3px solid transparent;
+        padding-bottom: .5rem;
+        border-image: linear-gradient(to right, #fd0a0a, #832b86, rgb(28, 200, 212)) 1;
+
+    }
+}
+
+
+
+/*Footer*/
+
+.seccion_footer {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+
+footer .font_titulo_pagina{
+    font-size: medium ;
+}
+
+.seccion_footer span{
+    font-size: small;
+}
+
+.seccion_footer div:nth-child(2){
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,407 @@
+/*Fondos*/
+
+#albums {
+    background: linear-gradient(to top, #010303, #257278);
+}
+
+#artistas_destacados {
+    background: linear-gradient(to top, #000000, #832b86);
+}
+
+#top_canciones {
+    background-color: #0c0c0c;
+}
+
+
+
+/*Encabezado general secciones (titulo y enlace a detalle)*/
+
+.encabezado_seccion {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+
+    h2 {
+        border-bottom: 3px solid transparent;
+        padding-bottom: .5rem;
+        border-image: linear-gradient(to right, #fd0a0a, #832b86, rgb(28, 200, 212)) 1;
+
+    }
+}
+
+
+.container_tags {
+    width: 50%;
+    display: flex;
+    gap: 15px;
+}
+
+/* Articulo Principal*/
+
+.container_articulo_principal {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+}
+
+.container_articulo_principal h2 {
+    font-size: 300%;
+}
+
+.container_articulo_principal h2>span:first-child {
+    background: linear-gradient(to right, #f81414, #e260aa, rgb(226, 16, 233));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.container_articulo_principal footer {
+    display: block;
+}
+
+.container_articulo_principal img {
+    border-radius: 5%;
+    padding-bottom: 2%;
+}
+
+.lista_articulo_principal {
+
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+}
+
+.lista_articulo_principal .boton:first-child {
+    background: linear-gradient(to right, #fd0a0a, #832b86, rgb(28, 200, 212)) padding-box;
+}
+
+.lista_articulo_principal .boton:first-child:hover {
+    background: linear-gradient(to left, #fd0a0a, #832b86, rgb(28, 200, 212)) padding-box;
+}
+
+.lista_articulo_principal .boton:nth-child(2) {
+    background-color: #189f1f;
+}
+
+.lista_articulo_principal .boton:nth-child(2):hover {
+    background-color: #376c39;
+}
+
+.container_articulo_principal p {
+    width: 70%;
+    text-align: justify;
+}
+
+
+
+
+/* Seccion album */
+
+#albums .encabezado_seccion span {
+    background-color: #31a3ac;
+    border: 1px solid #96aeaf;
+}
+
+#albums .encabezado_seccion span:hover {
+    background-color: #147c83;
+}
+
+.seccion_album {
+    margin-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container_album {
+    width: 18%;
+    background: #202020;
+    border-radius: 15px;
+    margin-bottom: 2%;
+    height: 400px;
+
+    img {
+        width: 100%;
+        height: 270px;
+        border-radius: 15px 15px 0 0;
+        object-fit: cover;
+    }
+}
+
+.container_album:hover {
+
+    transform: translatey(-20px);
+    box-shadow: 0 15px 40px rgb(23, 23, 23);
+    transition: 0.3s;
+
+}
+
+.texto_album {
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+
+    span {
+        font-size: small;
+    }
+}
+
+.texto_album h3 {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: medium;
+}
+
+.texto_album .tag {
+    margin-top: 2%;
+    font-size: x-small;
+}
+
+.texto_album>div {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+
+.texto_album .boton {
+    background: #147c83;
+    padding: .20rem .50rem;
+    font-size: small;
+    list-style: none;
+
+}
+
+.texto_album .boton:hover {
+    background: linear-gradient(to left, #74d6ef, #285e6d) padding-box;
+}
+
+
+
+.container_album footer>div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+/* Seccion Artistas */
+
+#artistas_destacados .encabezado_seccion .boton{
+    background: #d42246;
+}
+
+#artistas_destacados .encabezado_seccion .boton:hover{
+    background:rgb(255, 82, 128);
+    border: none;
+}
+
+
+.seccion_artista {
+    padding-left: 10%;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container_artista {
+    width: 23%;
+    height: fit-content;
+    margin-bottom: 1%;
+    background-color: #8f086d;
+    border-radius: 15px;
+    display: flex;
+    position: relative;
+}
+
+.container_artista:hover {
+    transform: translate(10px, -12px);
+    box-shadow: 0 15px 40px rgb(23, 23, 23);
+    transition: 0.3s;
+
+}
+
+.container_artista>img {
+    width: 35%;
+    object-fit: contain;
+    border-radius: 15px 0 0 15px;
+}
+
+
+.container_artista>div {
+    margin-left: 5%;
+}
+
+#artista_anchor {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 1;
+}
+
+.container_artista h4 {
+    margin-bottom: 0.5rem;
+}
+
+.container_artista span {
+    font-size: medium;
+}
+
+.estrellas_ranking {
+    display: flex;
+    margin-top: 5%;
+}
+
+.estrellas_ranking img {
+    width: 10%;
+    background-image: none;
+    margin-right: 1%;
+
+}
+
+
+/* Conciertos y aside*/
+
+#barcelona{
+     background: linear-gradient(to right, #0a4206, #105502, rgb(10, 167, 49)) padding-box;
+}
+
+.conciertos_aside_container {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.recuadro_proximos_conciertos {
+    width: 60%;
+    height: 500px;
+    display: flex;
+    border: 15px solid rgb(30, 142, 164);
+    border-radius: 15px;
+}
+
+.recuadro_proximos_conciertos>article:nth-child(2) {
+    border-right: 15px solid rgb(30, 142, 164);
+    border-left: 15px solid rgb(30, 142, 164);
+}
+
+.container_concierto {
+    width: 33.33%;
+
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: contain;
+    }
+}
+
+.container_concierto>div {
+    padding-left: 5%;
+    padding-right: 3%;
+}
+
+.container_concierto>div>span {
+    font-size: small;
+}
+
+.container_concierto footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 7%;
+
+}
+
+.container_concierto footer>span {
+    background-color: #67084f;
+    font-size: x-small;
+}
+
+
+/*Aside*/
+aside {
+    display: flex;
+    flex-direction: column;
+}
+
+.container_radio {
+    margin-bottom: 5%;
+    background-color: #202020;
+    border-radius: 15px;
+    height: 26.5rem;
+
+}
+
+.container_radio img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.container_radio h3 {
+    padding-left: 4%;
+}
+
+.container_radio a {
+    padding-left: 4%;
+    margin-left: 4%;
+    background-color: #1b9922;
+}
+
+.container_radio a:hover {
+    background: linear-gradient(to right, #f81414, #e260aa, rgb(226, 16, 233));
+
+}
+
+.container_radio div {
+    padding-left: 4%;
+    font-weight: bold;
+    font-size: large;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+
+}
+
+
+/*Seccion top 10*/
+
+#top_canciones {
+    border: 1px solid rgb(86, 85, 85);
+    padding-bottom: 5%;
+    margin-bottom: 10%;
+}
+
+.seccion_top_canciones {
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.top_lista {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1%;
+}
+
+.top_lista a {
+    font-style: italic;
+}
